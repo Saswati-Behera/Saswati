@@ -1,0 +1,24 @@
+package test;
+
+import java.util.Scanner;
+
+public class Test  {
+
+      public static void main (String args[])  {
+           Scanner i = new Scanner (System.in);
+           System.out.println("Period of Investement :  ");
+           int n = i.nextInt();
+           System.out.println("Invested Amount : ");
+           int a = i.nextInt();
+           int mul = calculateMultiply(n);
+           System.out.println("Output : " + (mul*a) );
+      }
+      
+      private static int calculateMultiply(int n) {
+           int mul = 1;
+           for (int i=n; i>0; i--) {
+                mul = mul * i;
+           }
+           return mul;
+      }
+}
